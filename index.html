@@ -4,26 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
     <title>Document</title>
 </head>
 <body>
-    Testing
     
-    <div>
-        <button id="A" onclick="play">
-            A
+    <div class="button-container">
+        <button id="a" onclick="play">
+            <div>
+               A
+            </div> 
+
+            <div class="sounds">
+                Clap
+            </div>
         </button>
-        <button id="S" (click)="playS()" >
-            S
+        <button id="s" (click)="playS()" >
+            <div>
+                S
+            </div>
+            <div class="sounds">
+                Sihat
+            </div>
         </button>
-        <button id="D" (click)="playD()">
-            D
+        <button id = "d" >
+            <div>
+                D
+            </div>
+
+            <div class="sounds">
+                Kick
+            </div>
         </button>
-        <button id="F" (click)="playF()">
-            F
+        <button id = "f" class="sounds">
+            <div>
+                F
+            </div>
+
+            <div class="sounds">
+                open
+            </div>
         </button>
-        <button id="G" (click)="">
-            G
+        <button id = "g" >
+            <div>
+                G
+            </div>
+
+            <div class="sounds">
+                Boom
+            </div>
         </button>
     </div>
    

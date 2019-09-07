@@ -3,6 +3,12 @@ let a = document.getElementById("A");
 document.onkeypress = (ev) => {
    let keyboardKey = String.fromCharCode(ev.keyCode);
    keyboardKey = keyboardKey.toLowerCase();
+   let buttonClicked = document.getElementById(keyboardKey);
+   buttonClicked.classList.add('selectedButton');
+
+   setTimeout(() => {
+       buttonClicked.classList.remove('selectedButton')
+   }, 200);
    switch(keyboardKey) {
        
        case 'a': {
@@ -35,5 +41,12 @@ document.onkeypress = (ev) => {
            break;
        }
    }
+}
+
+document.onkeyup = (ev) => {
+    let keyboardKey = String.fromCharCode(ev.keyCode);
+    let buttonClicked = document.getElementById(keyboardKey);
+
+    buttonClicked.classList.remove('selectedButton');
 }
 
